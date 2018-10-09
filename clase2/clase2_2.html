@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		var notaDes= prompt("nota desafios:");
+		var notaExa= prompt("nota Examenes:");
+
+
+		if (notaDes==null || notaDes=="")
+			alert("debe escribir la nota de desafios");
+		else
+			if (isNaN(notaDes))
+				alert("es una nota invalidad");
+			else
+				if (notaDes<0 || notaDes>100)
+					alert("la nota debe estar entre 0 a 100");
+				if (notaDes>=80)
+					alert("aprobo los desafios");
+				else
+					alert("reprobo los desafios");
+
+					if (notaExa==null || notaExa=="")
+			alert("debe escribir la nota de desafios");
+		else
+			if (isNaN(notaExa))
+				alert("es una nota invalidad");
+			else
+				if (notaExa<0 || notaExa>100)
+					alert("la nota debe estar entre 0 a 100");
+				if (notaExa>=80)
+					alert("aprobo los Examenes");
+				else
+					alert("reprobo los Examenes");
+
+				if (notaDes>=80 && notaExa>=80)
+					alert("Felicidades aprobo el nivel")
+				else
+					alert("reprobo el nivel")
+
+	</script>
+
+</body>
+</html>

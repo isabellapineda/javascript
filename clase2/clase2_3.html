@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var monto=parseFloat(prompt("precio del producto"));
+		var cant=parseFloat(prompt("caidad:"));
+
+		if (isNaN(monto))
+			alert("monto invalido");
+		else
+			if (isNaN(cant))
+				alert("cantidad invalida")
+			else{
+				var subtotal=monto*cant;
+				var iva=subtotal*0.12;
+					if (cant>12) {
+						descuento=subtotal*0.05;
+						descuento_sobrante=subtotal*0.95;
+						total_descuento=total-total*0.05;
+						alert("tienes un descuento de 5% "+
+								" desacuento: "+descuento+
+								" la cantidad sobrante es "+descuento_sobrante+
+								" monto total a pagar con el descuento es: "+total_descuento);
+					}
+					else
+						descuento=0;
+						alert("no hay descuento");
+				
+				
+				var total=subtotal+iva;
+
+
+				alert("el subtotal: "+subtotal+" bs \n "+
+					  "el IVA: "+iva+" bs \n"+
+					  "el monto total "+total+" bs" )
+			
+					console.log(monto)
+					console.log(cant)
+					console.log(monto*cant)
+
+			}
+
+	
+
+	</script>
+
+</body>
+</html>
