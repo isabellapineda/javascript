@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<script src="clase4_1.html"></script>
+</head>
+<body onload="">
+ <script>
+ 	maximizar();
+ </script>
+
+	<a href="#" onclick="window.print()">Imprimir</a> 
+
+	<script>
+		function mostrar(){
+			alert(window.navigator.appname+"\n"+
+				window.navigator.lenguage+"\n"+
+				window.navigator.userAgent+"\n"+
+				window.navigator.online);
+		alert(". Ancho: "+window.screen.width+"\n"+ //ancho de la pantalla
+			". Alto:"+window.screen.height+"\n"+
+			". Ancho disponible: "+                //disponible de la pantalla
+			window.screen.availWidth+"\n"+
+			". Alto disponible: "+
+			window.screen.availHeight)
+		}
+/*notas
+onclick="window.print() ME ABRE LA OPCION PARA IMPRIMIR 
+onclick="window.location='clase4_1_b.html' cambia el nombre*/ 
+	</script>
+
+</body>
+</html>
